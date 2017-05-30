@@ -119,7 +119,6 @@ $$ |  $$ |$$$$$$\ $$ |  $$ |$$$$$$$$\       $$ | \_/ $$ |$$$$$$$$\       $$ |   
 
         <div class="floater" data-projectId="shamir">
           <img class="floaterImg" src="home/projects/shamir/floater-shamir.png" width="170">
-          <?php echo file_get_contents("home/img/new-sticker.svg"); ?>
 
           <p class='floaterCaption'>Shamir Sound Space</p>
         </div>
@@ -135,6 +134,13 @@ $$ |  $$ |$$$$$$\ $$ |  $$ |$$$$$$$$\       $$ | \_/ $$ |$$$$$$$$\       $$ |   
             <?php echo file_get_contents("home/img/new-sticker.svg"); ?>
             <p class='floaterCaption'>3ina: Art Freedom</p>
         </div>
+
+        <div class="floater toneeditor noshadow" data-projectId="toneeditor">
+            <img class="floaterImg" src="home/projects/toneeditor/floater.png" width="280">
+            <?php echo file_get_contents("home/img/new-sticker.svg"); ?>
+            <p class='floaterCaption'>Tone&#8202;Editor</p>
+        </div>
+
 
         <div class="floater about" data-projectId="about">
             <img class="floaterImg" src="home/projects/about/croppedMe.png" width="150">
@@ -222,9 +228,6 @@ $$ |  $$ |$$$$$$\ $$ |  $$ |$$$$$$$$\       $$ | \_/ $$ |$$$$$$$$\       $$ |   
               <br>
               Manipulate the miniature windows to affect the loop duration, pitch, pan, and volume of each voice. Click anywhere on the background to add a new voice.
             </p>
-
-
-
 
             <a href="http://urmston.xyz/desktopensemble" target="_blank" class="externalLinkButton desktopOnly full-width">
                 <p class="externalLinkButtonCaption">visit site<span class="externalLink"></span></p>
@@ -461,6 +464,29 @@ $$ |  $$ |$$$$$$\ $$ |  $$ |$$$$$$$$\       $$ | \_/ $$ |$$$$$$$$\       $$ |   
 
                 <a href="http://staging.urmston.xyz/3ina" target="_blank" class="externalLinkButton full-width">
                     <p class="externalLinkButtonCaption">visit site<span class="url"></span></p>
+                </a>
+            </div>
+        </div>
+
+        <div class="viewer" data-projectId="toneeditor">
+            <div class="projectContents">
+                <div class="projectHead">
+                    <p class='projectTitle'>ToneEditor</p>
+                    <p class="projectInfo">The missing GUI for Tone.js. <span class="projectTags">development</span><span class="projectTags">UI/UX</span><span class="projectTags">tools</span><span class="projectYear">2017</span></p>
+                </div>
+
+                <!-- <div class="pseudoBrowserBar"></div> -->
+
+                <div class="projectImg">
+                  <img src="home/projects/toneeditor/screenshot5.png" style="background: slateblue"/>
+                </div>
+
+                <p class="projectImgCaption">ToneEditor is the missing GUI for <a href="https://github.com/Tonejs/Tone.js">Tone.js</a>, a popular framework for web music. Use it during design and development, then throw it out when you're done.</p>
+
+                <p class="projectImgCaption">Tone.js is a fun, flexible and hi-performance web music framework, but because it's text-based, the process of being creative with it can be slow. A GUI layer solves this problem, allowing you fiddle with parameters of all your Tone objects in real time, then copy the changes into your code.</p>
+
+                <a href="https://github.com/willurmston/ToneEditor" target="_blank" class="externalLinkButton full-width">
+                    <p class="externalLinkButtonCaption">View on GitHub</p>
                 </a>
             </div>
         </div>

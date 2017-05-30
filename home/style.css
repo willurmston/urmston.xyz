@@ -192,6 +192,12 @@ h2{
   top: -3%;
 }
 
+.floater[data-projectid="toneeditor"] .new-sticker {
+  top: -82px;
+  left: 140px;
+}
+
+
 .floater > *:not(.noshadow) {
   transition: width 0.1s, height 0.1s, margin 0.3s;
   -webkit-filter: drop-shadow(1pt 1pt 1.5pt rgba(0,0,0,0.7));
@@ -844,7 +850,7 @@ h2{
 }
 
 
-@media only screen and (max-width: 1000px)
+@media only screen and (max-width: 1000px; min-width: 700px;)
 {
     .viewer > div.projectContents {
       max-width: calc(100vw - 40px);

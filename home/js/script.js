@@ -70,57 +70,57 @@ $(document).ready(function() {
       .appendTo(this.$viewer)
 
     var _this = this
-
-    this.open = function(clickEvent) {
-      projectOpen = true
-      currentOpenProject = this
-      window.location.hash = _this.projectId
-
-      TweenMax.killTweensOf( _this.$floater )
-      var projectId = _this.$floater.attr('data-projectId')
-
-      _this.$viewer
-        .addClass('projectOpen')
-
-      var transformData = _this.$floater[0]._gsTransform
-
-      var x = transformData.x+(_this.$floater.width()/2)
-      var y = transformData.y+(_this.$floater.height()/2)
-      var duration = 0.25
-
-      if (clickEvent === undefined) {
-        duration = 0
-      }
-
-      TweenMax.fromTo(_this.$floater, duration, {
-        scale:1,
-        transformOrigin: 'center center',
-      },{
-        scale: 0
-      })
-
-      TweenMax.fromTo( _this.$viewer, duration, {
-        transformOrigin: x+'px '+y+'px',
-        scale: 0.1,
-        opacity:0,
-        ease: Power2.easeOut
-      },{
-        scale: 1,
-        opacity: 1,
-        onComplete: function() {
-          TweenMax.to(_this.$closeButton, 0.3, {opacity: 0.8, delay: 0.2, ease: Power0.easeNone})
-        }
-      })
-
-    } //end open()
   } //end Project constructor
+
+  Project.prototype.open = function(clickEvent) {
+    projectOpen = true
+    currentOpenProject = this
+    var _this = this
+    window.location.hash = _this.projectId
+
+    TweenMax.killTweensOf( _this.$floater )
+    var projectId = _this.$floater.attr('data-projectId')
+
+    _this.$viewer
+      .addClass('projectOpen')
+
+    var transformData = _this.$floater[0]._gsTransform
+
+    var x = transformData.x+(_this.$floater.width()/2)
+    var y = transformData.y+(_this.$floater.height()/2)
+    var duration = 0.25
+
+    if (clickEvent === undefined) {
+      duration = 0
+    }
+
+    TweenMax.fromTo(_this.$floater, duration, {
+      scale:1,
+      transformOrigin: 'center center',
+    },{
+      scale: 0
+    })
+
+    TweenMax.fromTo( _this.$viewer, duration, {
+      transformOrigin: x+'px '+y+'px',
+      scale: 0.1,
+      opacity:0,
+      ease: Power2.easeOut
+    },{
+      scale: 1,
+      opacity: 1,
+      onComplete: function() {
+        TweenMax.to(_this.$closeButton, 0.3, {opacity: 0.8, delay: 0.2, ease: Power0.easeNone})
+      }
+    })
+
+  } //end open()
 
   // CREATE PROJECT OBJECTS BASED ON DOM
   $('div.viewer').each(function() {
     var id = $(this).attr('data-projectId')
     projects[id] = new Project( id, $(this) )
   })
-  console.log(projects)
 
   //prevent caching
   $('.floaterImg').each( function() {
@@ -278,7 +278,6 @@ $(document).ready(function() {
   // LISTENERS
   $('.floater').click( function(e) {
     var id = $(this).attr('data-projectId')
-    console.log(id)
     projects[id].open(e)
     event.stopPropagation()
   })
@@ -342,7 +341,6 @@ $(document).ready(function() {
         .html('<p class="externalLinkButtonCaption">view project on a laptop or desktop: <span style="color:black; cursor:text;">'+url.split('http://')[1]+'</span></p>')
 
         // .find('.externalLink').hide()
-        console.log('yoy')
 
       $(this)
         .replaceWith($replacement)
