@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg class="new-sticker" width="159px" height="159px" viewBox="0 0 159 159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard">
+            <polygon class="star" fill="#A1A1A1" points="79.5 141.746016 62.9710206 157.262734 54.1822646 136.364565 32.7710724 143.816851 33.2421956 121.150714 10.6509804 119.25 20.3005212 98.7350767 0.435509318 87.8100128 17.5949746 72.9935196 3.89100695 54.9331489 25.5933692 48.3769922 20.4199864 26.3041168 42.91271 29.1419155 47.1644369 6.87313612 66.5583256 18.6142092 79.5 0 92.4416744 18.6142092 111.835563 6.87313612 116.08729 29.1419155 138.580014 26.3041168 133.406631 48.3769922 155.108993 54.9331489 141.405025 72.9935196 158.564491 87.8100128 138.699479 98.7350767 148.34902 119.25 125.757804 121.150714 126.228928 143.816851 104.817735 136.364565 96.0289794 157.262734"></polygon>
+            <text class="text" transform="translate(82.500000, 82.000000) rotate(-10.000000) translate(-82.500000, -82.000000) " font-family="Arial-BoldMT, Arial" font-size="40.5" font-weight="bold" letter-spacing="0.800000012" fill="#FFFFFF">
+                <tspan x="27" y="96">NEW!</tspan>
+                <!-- <tspan x="57.0478027" y="96" letter-spacing="1.2">E</tspan>
+                <tspan x="85.2609863" y="96" letter-spacing="0.8">W</tspan>
+                <tspan x="124.286816" y="96">!</tspan> -->
+            </text>
+        </g>
+    </g>
+</svg>
